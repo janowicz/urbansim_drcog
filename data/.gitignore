@@ -1,5 +1,2 @@
-# Ignore everything in this directory
 *.h5
-# Except this file
-!.gitignore
-!drcog2
+
