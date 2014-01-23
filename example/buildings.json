@@ -3,8 +3,8 @@
   "writetotmp": "buildings",
   "model": "minimodel",
   "var_lib": {
-    "zone_id": "dset.parcels.ix[_tbl_.parcel_id].zone_id.values",
-    "parcel_acres": "dset.parcels.ix[_tbl_.parcel_id].parcel_acres.values"
+    "zone_id": "dset.parcels.zone_id[_tbl_.parcel_id].values",
+    "parcel_sqft": "dset.parcels.parcel_sqft[_tbl_.parcel_id].values"
   },
-  "ind_vars": ["zone_id","parcel_acres"]
+  "ind_vars": ["zone_id","parcel_sqft"]
 }

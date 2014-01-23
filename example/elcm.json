@@ -1,6 +1,7 @@
 {
-  "table": "dset.jobs",
+  "table": "dset.establishments",
   "model": "locationchoicemodel",
+  "filters": ["(_tbl_.sector_id>22)*(_tbl_.sector_id<7211)*(_tbl_.sector_id<>54)"],
   "modeldependencies": "nrh.json",
   "alternatives":"dset.buildings[dset.buildings.residential_units<1]",
   "merge": {
@@ -12,17 +13,16 @@
     "rate_table": "dset.annual_job_relocation_rates",
     "rate_field": "job_relocation_probability"
   },
-  "supply_constraint": "dset.buildings.non_residential_units.sub(choosers.groupby('building_id').size(),fill_value=0)",
+  "supply_constraint": "dset.buildings.non_residential_units.sub(choosers.groupby('building_id').employees.sum(),fill_value=0).astype('int')/100",
   "alt_sample_size": 100,
-  "est_sample_size": 10000,
+  "est_sample_size": 1000,
   "dep_var": "building_id",
   "var_lib_file": "var_lib.json",
   "segment": ["sector_id"],
   "ind_vars": [
     "average_nonresprice",
     "ln_average_income",
-    "ln_population_in_range",
-    "ln_time_to_downtown"
+    "ln_population_in_range"
   ],
   "output_names": [
     "mrcog-coeff-nonreslocation-%s.csv",

@@ -35,7 +35,12 @@ def estimate(dset,config,year=None,show=True,simulate=0,variables=None):
       
       if name: print "Estimating hedonic for %s with %d observations" % (name,len(segment.index))
       if show : print est_data.describe()
-
+      
+      est_data = est_data.replace([np.inf,-np.inf],np.nan)
+      est_data = est_data.fillna(0)
+      depvar = depvar.replace([np.inf,-np.inf],np.nan)
+      depvar = depvar.fillna(0)
+      
       model = sm.OLS(depvar,est_data)
       results = model.fit()
       if show: print results.summary()

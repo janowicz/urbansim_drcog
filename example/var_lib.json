@@ -7,5 +7,5 @@
 "income_quantile": "pd.qcut(_tbl_.income,4).labels",
 "historic": "_tbl_.year_built < 1950",
 "new": "_tbl_.year_built > 1990",
-"ln_parcel_acres": "_tbl_.parcel_acres.apply(np.log1p)"
+"ln_parcel_sqft": "_tbl_.parcel_sqft.apply(np.log1p)"
 }

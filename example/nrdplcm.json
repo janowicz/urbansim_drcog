@@ -1,6 +1,6 @@
 {
   "table": "dset.buildings",
-  "filters": ["_tbl_.building_type_id>2"],
+  "filters": ["_tbl_.building_type_id.isin([1,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,21,22,23,25])"],
   "estimate_filters": ["_tbl_.parcel_id<>-1"], 
   "simulate_filters": ["_tbl_.parcel_id==-1"], 
   "model": "locationchoicemodel",
@@ -10,20 +10,19 @@
     "right_index":true
   },
   "alternatives":"dset.parcels",
-  "supply_constraint": "(dset.parcels.max_far*dset.parcels.parcel_acres*43560).sub(choosers.groupby('parcel_id').non_residential_sqft.sum(),fill_value=0).astype('int')",
+  "supply_constraint": "(dset.parcels.parcel_sqft.astype('int'))",
   "dontexpandunits":true,
   "demand_amount": "non_residential_sqft",
   "demand_amount_scale": 1000,
-  "est_sample_size": 5000,
+  "est_sample_size": 500,
   "alt_sample_size": 100,
   "dep_var": "parcel_id",
   "segment": ["building_type_id"],
   "var_lib_file": "var_lib.json",
   "ind_vars": [
-    "ln_parcel_acres",
+    "ln_parcel_sqft",
     "ln_average_income",
-    "ln_population_in_range",
-    "ln_time_to_downtown"
+    "ln_population_in_range"
   ],
   "output_names": [
     "mrcog-coeff-nonresdevprojlocation-%s.csv",

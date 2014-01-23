@@ -3,7 +3,7 @@ import pandas as pd, numpy as np
 def estimate(dset,config,year=None,show=True,variables=None):
   return 
 
-def simulate(dset,config,year=None,show=True,variables=None):
+def simulate(dset,config,year=None,show=True,variables=None,subtract=False):
   assert "table" in config
   assert "writetotmp" in config
   assert "geography_field" in config
@@ -20,8 +20,8 @@ def simulate(dset,config,year=None,show=True,variables=None):
     hhs["_year_added_"] = np.array([curyear]*len(hhs.index))
     dset.save_tmptbl(outtblname,hhs)
     return
-  
-  if show: print hhs.describe()
+  # print hhs
+  #if show: print hhs.describe()
   
   if "control_totals" in config:
     control_totals = eval(config["control_totals"])
@@ -36,16 +36,16 @@ def simulate(dset,config,year=None,show=True,variables=None):
     num = eval(demands[0])
     for item in demands[1:]: num = num.add(eval(item),fill_value=0)
     denom = eval(va_cfg["supply"])
-    print "Numerator:\n", num
-    print "Denominator:\n", denom
+    # print "Numerator:\n", num
+    # print "Denominator:\n", denom
     vacancy = (denom-num)/denom
     if "negative_vacancy" in config and config["negative_vacancy"] == False: vacancy[vacancy<0] = 0 
-    print "Vacancy = (denom-num)/denom:\n", vacancy
+    # print "Vacancy = (denom-num)/denom:\n", vacancy
     targets = eval(va_cfg["targets"])
     target_vacancy = targets[year]
-    print "Minimum vacancy (from target_vacancy table):\n", target_vacancy
+    # print "Minimum vacancy (from target_vacancy table):\n", target_vacancy
     vacancy_diff = (target_vacancy-vacancy).dropna()
-    print "Vacancy diff = target-actual:\n", vacancy_diff
+    # print "Vacancy diff = target-actual:\n", vacancy_diff
     newunits = (vacancy_diff[vacancy_diff>0]*denom).dropna()
     print "New units to build (vacancy_diff * denom):\n", newunits
     control_totals = cur_ct = newunits.reset_index()
@@ -57,12 +57,15 @@ def simulate(dset,config,year=None,show=True,variables=None):
     if col <> config["amount_field"]: cols.append(col)
   if type(cur_ct) == pd.DataFrame:
     if prev_ct is not None:
-      cnt = cur_ct.reset_index(drop=True).set_index(cols) - prev_ct.reset_index(drop=True).set_index(cols)
+      #cnt = cur_ct.reset_index(drop=True).set_index(cols) - prev_ct.reset_index(drop=True).set_index(cols)
+      cnt = cur_ct.reset_index(drop=True).set_index(cols)
     else:  
       cnt = cur_ct.reset_index(drop=True).set_index(cols)
   else:
     cnt = cur_ct - prev_ct
-  print "Adding %d agents" % cnt.sum()
+
+  print cnt
+  print "Adding agents to match target of %d " % cnt.sum()
   newhh = []
   if type(cur_ct) == pd.DataFrame:
     for row in cnt.iterrows():
@@ -70,16 +73,44 @@ def simulate(dset,config,year=None,show=True,variables=None):
       subset = hhs
       if type(index) in [np.int32,np.int64]: index = [index]
       for col,name in zip(index,cols): subset = subset[subset[name] == col]
+      # print 'subset size'
+      subset_size = len(subset.index.values)
+      if "size_field" in config: subset_size = subset[config["size_field"]].sum()
+      # print subset_size
       num = row.values[0]
-      if num == 0: continue
-      tmphh = hhs.ix[np.random.choice(subset.index.values,num)]
-      if "size_field" in config: tmphh = tmphh[np.cumsum(tmphh[config["size_field"]].values)<num]
-      newhh.append(tmphh)
+      # print 'target'
+      # print num
+      if "vacancy_targets" not in config:
+          num = num - subset_size
+      if subset_size == 0:  
+          continue
+      print 'action'
+      print num
+      if subtract:
+          if num == 0: continue
+          if num < 0:
+              hhs = hhs[np.invert(np.in1d(hhs.index.values,np.random.choice(subset.index.values,abs(num),replace=False)))]
+          else:
+              tmphh = hhs.ix[np.random.choice(subset.index.values,num)]
+              if "size_field" in config: tmphh = tmphh[np.cumsum(tmphh[config["size_field"]].values)<num]
+              newhh.append(tmphh)
+      else:
+          if num == 0: continue
+          if num < 0: #continue
+              tmphh = hhs.ix[np.random.choice(subset.index.values,abs(num))]
+              if "size_field" in config: tmphh = tmphh[np.cumsum(tmphh[config["size_field"]].values)<abs(num)]
+              hhs = hhs[np.invert(np.in1d(hhs.index.values,tmphh.index.values))]
+          else:
+              tmphh = hhs.ix[np.random.choice(subset.index.values,num)]
+              if "size_field" in config: tmphh = tmphh[np.cumsum(tmphh[config["size_field"]].values)<num]
+              newhh.append(tmphh)
   else:
     num = cnt.values[0]
     if num <> 0: newhh.append(hhs.ix[np.random.choice(hhs.index.values,num,replace=False)])
 
-  if not newhh: return # no new agents
+  if not newhh:
+    print 'None!!!'  
+    return # no new agents
   newhh = pd.concat(newhh)
   newhh[config["geography_field"]] = -1
   newhh["_year_added_"] = np.array([curyear]*len(newhh.index))

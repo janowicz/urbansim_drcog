@@ -6,7 +6,7 @@
     "right_index":true
   },
   "model": "hedonicmodel",
-  "filters":         ["_tbl_.building_type_id<3"],
+  "filters":         ["_tbl_.building_type_id.isin([2,3,20,24])"],
   "estimate_filters": ["_tbl_.residential_units>0",
                       "_tbl_.improvement_value>40000"],
   "segment": ["building_type_id"],
@@ -17,11 +17,10 @@
     "historic",
     "new",
     "year_built",
-    "ln_parcel_acres",
+    "ln_parcel_sqft",
     "ln_sqft_per_unit",
     "ln_average_income",
-    "ln_population_in_range",
-    "ln_time_to_downtown"
+    "ln_population_in_range"
   ],
   "submodel_vars": {"2": [
     "historic",

@@ -6,7 +6,7 @@
   	"right_index":true
   },
   "model": "hedonicmodel",
-  "filters":         ["_tbl_.building_type_id.isin([3,4,5,6,7,8,31,51,61])"],
+  "filters":         ["_tbl_.building_type_id.isin([1,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,21,22,23,25])"],
   "estimate_filter": ["_tbl_.non_residential_sqft>0",
                       "_tbl_.improvement_value>10000"],
   "segment": ["building_type_id"],
@@ -17,14 +17,13 @@
     "historic": "_tbl_.year_built < 1950",
     "new": "_tbl_.year_built > 1990",
     "year_built_building": "_tbl_.year_built*(_tbl_.year_built>0)",
-    "nonres_sqft_divided_by_parcel_acres": "dset.parcels.nonres_sqft_divided_by_parcel_acres[_tbl_.parcel_id].apply(np.log1p).values"
+    "nonres_sqft_divided_by_parcel_sqft": "dset.parcels.nonres_sqft_divided_by_parcel_sqft[_tbl_.parcel_id].apply(np.log1p).values"
   },
   "ind_vars": [
     "job_density",
-    "time_to_downtown",
     "wealthy_hh_within_45min",
     "jobs_within_30min",
-    "nonres_sqft_divided_by_parcel_acres",
+    "nonres_sqft_divided_by_parcel_sqft",
     "year_built_building"
   ],
   "add_constant": true,

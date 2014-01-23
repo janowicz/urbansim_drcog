@@ -30,7 +30,6 @@ def estimate(dset,config,year,show=True,variables=None):
         choosers[varname] = calcvar(choosers,config,dset,varname)
     segments = choosers.groupby(config['segment'])
   for name, segment in segments:
-
     name = str(name)
     if name is not None: tmp_outcsv, tmp_outtitle, tmp_coeffname = output_csv%name, output_title%name, coeff_name%name
     else: tmp_outcsv, tmp_outtitle, tmp_coeffname = output_csv, output_title, coeff_name
@@ -96,11 +95,18 @@ def simulate(dset,config,year,sample_rate=.05,variables=None,show=False):
     empty_units = eval(config['supply_constraint'])
     if "demand_amount_scale" in config: empty_units /=  float(config["demand_amount_scale"])
     empty_units = empty_units[empty_units>0].order(ascending=False)
+    print 'yoyo'
     if 'dontexpandunits' in config and config['dontexpandunits'] == True: 
       alternatives = alternatives.ix[empty_units.index]
       alternatives["supply"] = empty_units
       lotterychoices = True
     else: 
+      print 'yoyoyo'
+      print len(empty_units.index)
+      print empty_units.values.sum()
+      for c in dset.coeffs.columns:
+          print c
+      empty_units = empty_units/10
       alternatives = alternatives.ix[np.repeat(empty_units.index,empty_units.values.astype('int'))]
     print "There are %s empty units in %s locations total in the region" % (empty_units.sum(),len(empty_units))
 

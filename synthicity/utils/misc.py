@@ -8,6 +8,7 @@ def run_model(fname,dset,show=1,estimate=1,simulate=0,year=2010,variables=None):
   if type(fname) == type(""): 
     print "Running %s\n" % fname
     config = json.loads(open(fname).read()) 
+    #print 'yo11'
   else: 
     config = fname
     if "_id" in config: fname = config["_id"]
@@ -48,18 +49,18 @@ VARNAMESDICT = {
 'income x income':'Interacted income',
 }
 
-def data_dir(): return os.path.join(os.environ['DATA_HOME'],'data')
-def runs_dir(): return os.path.join(os.environ['DATA_HOME'],'runs')
-def output_dir(): return os.path.join(os.environ['DATA_HOME'],'output')
+def data_dir(): return os.path.join(os.environ['DRCOG_USIM'],'data')
+def runs_dir(): return os.path.join(os.environ['DRCOG_USIM'],'runs')
+def output_dir(): return os.path.join(os.environ['DRCOG_USIM'],'output')
 
 def get_run_number():
     try:
-      f = open(os.path.join(os.environ['DATA_HOME'],'RUNNUM'),'r')
+      f = open(os.path.join(os.environ['DRCOG_USIM'],'RUNNUM'),'r')
       num = int(f.read())
       f.close()
     except:
       num = 0
-    f = open(os.path.join(os.environ['DATA_HOME'],'RUNNUM'),'w')
+    f = open(os.path.join(os.environ['DRCOG_USIM'],'RUNNUM'),'w')
     f.write(str(num+1))
     f.close()
     return num

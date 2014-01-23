@@ -36,19 +36,28 @@ def mnl_estimate(data,chosen,numalts,gpu=GPU):
 def mnl_simulate(data,coeff,numalts,gpu=GPU,returnprobs=0):
     return mnl.mnl_simulate(data,coeff,numalts,gpu,returnprobs)
 
-def mnl_interaction_dataset(choosers,alternatives,SAMPLE_SIZE,chosenalts=None):
+def mnl_interaction_dataset(choosers,alternatives,SAMPLE_SIZE,chosenalts=None,weight_var=None):
 
     numchoosers = choosers.shape[0]
     numalts = alternatives.shape[0]
-
+    if weight_var:
+        sample_probs = (alternatives[weight_var]*1.0/alternatives[weight_var].sum()).values
     if SAMPLE_SIZE < numalts:
-      sample = np.random.choice(alternatives.index.values,SAMPLE_SIZE*choosers.shape[0]) 
+      if weight_var:
+          sample = np.random.choice(alternatives.index.values,SAMPLE_SIZE*choosers.shape[0],p=sample_probs) 
+      else: 
+          sample = np.random.choice(alternatives.index.values,SAMPLE_SIZE*choosers.shape[0])
       if chosenalts is not None: sample[::SAMPLE_SIZE] = chosenalts # replace with chosen alternative
     else:
       assert chosenalts is None # if not sampling, must be simulating
       assert numchoosers < 10 # we're about to do a huge join - do this with a discretized population
       sample = np.tile(alternatives.index.values,numchoosers)
-
+      
+    # to_drop = ['external_zone_id','area','modelarea','area_type','zonecentroid_x','zonecentroid_y','county','numtransstops','averagedailyparkingcost','intrdenshhbuffer','intrdensempbuffer','private_pk8enrollment','public_pk8enrollment','total_pk8enrollment','private_912enrollment','public_912enrollment','total_912enrollment','universityenrollment','schooldistrictzone','schooldistrictname','newdistrictname','newdistrictid','totalzonalenrollment','escort_agglogsum','persbus_agglogsum','shop_agglogsum','meal_agglogsum','socrec_agglogsum','workbasedsubtour_agglogsum']
+    # if 'tax_exempt' in alternatives.columns:
+      # to_drop = to_drop + ['improvement_value','land_area','bldg_sq_ft','tax_exempt']
+    # alternatives = alternatives.drop(to_drop,1)
+    
     alts_sample = alternatives.ix[sample]
     
     try: alts_sample['join_index'] = np.repeat(choosers.index,SAMPLE_SIZE)
