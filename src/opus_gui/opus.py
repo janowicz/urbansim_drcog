@@ -68,6 +68,7 @@ def load_gui():
     gui_config.splash_screen.showMessage('Loading and compiling Python Modules...')
     gui_config.splash_screen.show()
 
+
 # Main entry to program.  Set up the main app and create a new window.
 def main():
     # if 'PYTHONPATH' in os.environ:
@@ -114,6 +115,11 @@ def main():
 
     # init main window
     gui_config.splash_screen.showMessage('Initializing UrbanSim2 Window...')
+    import time
+    time.sleep(2)
+    gui_config.splash_screen.showMessage('Reticulating_splines...')
+    gui_config.splash_screen.show()
+    time.sleep(1)
     from opus_gui.main.controllers.mainwindow import OpusGui
     wnd = OpusGui(gui_configuration = gui_config)
     gui_config.splash_screen.finish(wnd)

@@ -1,0 +1,5 @@
+        Simulate year 2011: started on Wed Feb 12 12:07:35 2014
+            Running UrbanSim2 (from drcog.models.calibration): started on Wed Feb 12 12:07:36 2014
+                Starting UrbanSim2 run.
+            Running UrbanSim2 (from drcog.models.calibration): completed...0.2 sec
+        Simulate year 2011: completed....................................0.4 sec

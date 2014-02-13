@@ -1,0 +1,10 @@
+        Simulate year 2011: started on Tue Feb 11 23:56:28 2014
+            Running UrbanSim2 (from drcog.models.calibration): started on Tue Feb 11 23:56:29 2014
+                Starting UrbanSim2 run.
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+            Running UrbanSim2 (from drcog.models.calibration): completed...19.7 sec
+        Simulate year 2011: completed...................................20.0 sec

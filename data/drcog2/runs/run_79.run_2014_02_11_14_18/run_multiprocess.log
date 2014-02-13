@@ -1,0 +1,35 @@
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 14:18:57 2014Cache Directory set to: c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_79.run_2014_02_11_14_18
+Start simulation run: started on Tue Feb 11 14:18:57 2014
+    random seed = (790371909,)
+    Starting simulation for year 2011: started on Tue Feb 11 14:18:57 2014    Starting simulation for year 2011: completed.........2 hrs, 29 min, 36.0 sec
+Start simulation run: completed..........................2 hrs, 29 min, 36.0 sec
+Running simulation for year 2011 in new process: completed...2 hrs, 29 min, 51.9 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 80 set to c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_80.run_2014_02_11_16_59
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Tue Feb 11 16:59:41 2014
+    Caching files from 'c:\users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_80.run_2014_02_11_16_59'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_80.run_2014_02_11_16_59\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 16:59:41 2014
+    Closing log file: c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_80.run_2014_02_11_16_59\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe c:\users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpquqham\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......4 min, 40.2 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 81 set to c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_81.run_2014_02_11_17_14
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Tue Feb 11 17:14:52 2014
+    Caching files from 'c:\users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_81.run_2014_02_11_17_14'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_81.run_2014_02_11_17_14\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 17:14:52 2014
+    Closing log file: c:\users\janowicz\Dropbox\repos\urbansim_drcog\data\drcog2/runs\run_81.run_2014_02_11_17_14\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe c:\users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpj1v2fk\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......4 min, 23.2 sec
+Done running simulation for years 2011 thru 2011

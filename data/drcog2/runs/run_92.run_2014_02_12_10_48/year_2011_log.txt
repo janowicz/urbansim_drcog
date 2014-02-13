@@ -1,0 +1,225 @@
+        Simulate year 2011: started on Wed Feb 12 10:48:10 2014
+            Running UrbanSim2 (from drcog.models.urbansim2): started on Wed Feb 12 10:48:10 2014
+                Starting UrbanSim2 run.
+                Model estimation...
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                Household diffs
+                county_id
+                8001         231897
+                8005          23977
+                8013          60394
+                8014           2190
+                8019          -1148
+                8031          87987
+                8035          68379
+                8039           7251
+                8047            926
+                8059          81897
+                8123          46944
+                dtype: int64
+                610694
+                Employment diffs
+                county_id
+                8001         142198
+                8005         227709
+                8013          39144
+                8014          22758
+                8019           2202
+                8031         158378
+                8035          96021
+                8039           -365
+                8047           1968
+                8059          70307
+                8123           6095
+                Name: employees, dtype: int32
+                766415
+                Resunit diffs
+                county_id
+                8001         272041
+                8005          54977
+                8013         122970
+                8014           4451
+                8019              0
+                8031         177121
+                8035         109313
+                8039          10853
+                8047           1702
+                8059         101235
+                8123          67818
+                Name: residential_units, dtype: int32
+                922481
+                NR sqft diffs
+                county_id
+                8001         152732278
+                8005         132489302
+                8013          95703566
+                8014          46643704
+                8019           4567466
+                8031         395886957
+                8035          44003837
+                8039                 0
+                8047           2144210
+                8059         193366747
+                8123           4338218
+                Name: non_residential_sqft, dtype: int32
+                1071876285
+            Running UrbanSim2 (from drcog.models.urbansim2): completed...44 min, 19.2 sec
+            Writing datasets to cache for year 2011: started on Wed Feb 12 11:32:30 2014....0.0 sec
+        Simulate year 2011: completed...........................44 min, 20.1 sec

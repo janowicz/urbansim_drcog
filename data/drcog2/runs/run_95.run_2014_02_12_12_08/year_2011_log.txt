@@ -1,0 +1,231 @@
+        Simulate year 2011: started on Wed Feb 12 12:08:15 2014
+            Running UrbanSim2 (from drcog.models.calibration): started on Wed Feb 12 12:08:15 2014
+                Starting UrbanSim2 run.
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                Household diffs
+                county_id
+                8001          2821
+                8005         12276
+                8013          -770
+                8014          3660
+                8019          -126
+                8031          -216
+                8035          2282
+                8039          -179
+                8047            -7
+                8059          4093
+                8123          -296
+                dtype: int64
+                23538
+                Employment diffs
+                county_id
+                8001         31138
+                8005         31266
+                8013         17592
+                8014          8475
+                8019           676
+                8031         38153
+                8035         12606
+                8039          -270
+                8047          1564
+                8059         26949
+                8123          6138
+                Name: employees, dtype: int32
+                174287
+                Resunit diffs
+                county_id
+                8001         7947
+                8005         1818
+                8013         5570
+                8014           42
+                8019            0
+                8031         5929
+                8035         5119
+                8039          403
+                8047           88
+                8059         1690
+                8123         2118
+                Name: residential_units, dtype: int32
+                30724
+                NR sqft diffs
+                county_id
+                8001          8955283
+                8005          9004974
+                8013          5522799
+                8014          2850149
+                8019           390409
+                8031         29171963
+                8035          2675403
+                8039                0
+                8047           374556
+                8059         12954765
+                8123           344638
+                Name: non_residential_sqft, dtype: int32
+                72244939
+                Number of hh county targets met: 2
+                Number of emp county targets met: 3
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                Household diffs
+                county_id
+                8001         4544
+                8005         8437
+                8013          698
+                8014         3075
+                8019         -115
+                8031         2240
+                8035         3949
+                8039            7
+                8047           14
+                8059          612
+                8123           77
+                dtype: int64
+                23538
+                Employment diffs
+                county_id
+                8001         29514
+                8005         30140
+                8013         14974
+                8014          9199
+                8019           -91
+                8031         42057
+                8035         16233
+                8039          -301
+                8047          1064
+                8059         21628
+                8123          5869
+                Name: employees, dtype: int32
+                170286
+                Resunit diffs
+                county_id
+                8001         8768
+                8005         1614
+                8013         6068
+                8014           54
+                8019            0
+                8031         5859
+                8035         5716
+                8039          545
+                8047           72
+                8059         1470
+                8123         2363
+                Name: residential_units, dtype: int32
+                32529
+                NR sqft diffs
+                county_id
+                8001          8485784
+                8005          8792504
+                8013          5279281
+                8014          3146724
+                8019           335934
+                8031         30273402
+                8035          3334679
+                8039                0
+                8047           205114
+                8059         11442867
+                8123           157051
+                Name: non_residential_sqft, dtype: int32
+                71453340
+                Number of hh county targets met: 3
+                Number of emp county targets met: 5
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                Household diffs
+                county_id
+                8001         3952
+                8005         4996
+                8013         2046
+                8014         2862
+                8019          -83
+                8031         5129
+                8035         1824
+                8039           39
+                8047          -35
+                8059         2374
+                8123          434
+                dtype: int64
+                23538
+                Employment diffs
+                county_id
+                8001         30289
+                8005         26604
+                8013         18775
+                8014          7972
+                8019           149
+                8031         41479
+                8035         14613
+                8039          -264
+                8047           755
+                8059         28641
+                8123          5821
+                Name: employees, dtype: int32
+                174834
+                Resunit diffs
+                county_id
+                8001         8304
+                8005         1268
+                8013         6844
+                8014           34
+                8019            0
+                8031         6833
+                8035         4879
+                8039          563
+                8047           93
+                8059         1554
+                8123         2465
+                Name: residential_units, dtype: int32
+                32837
+                NR sqft diffs
+                county_id
+                8001          8491256
+                8005          6681707
+                8013          5138828
+                8014          2809194
+                8019           204247
+                8031         27426149
+                8035          2562757
+                8039                0
+                8047           165543
+                8059         12632452
+                8123           255413
+                Name: non_residential_sqft, dtype: int32
+                66367546
+                Number of hh county targets met: 4
+                Number of emp county targets met: 4
+            Running UrbanSim2 (from drcog.models.calibration): completed...8 min, 46.8 sec
+            Writing datasets to cache for year 2011: started on Wed Feb 12 12:17:02 2014....0.0 sec
+        Simulate year 2011: completed............................8 min, 47.6 sec

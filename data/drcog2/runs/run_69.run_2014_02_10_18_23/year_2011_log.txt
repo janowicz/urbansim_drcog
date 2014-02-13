@@ -1,0 +1,16 @@
+        Simulate year 2011: started on Mon Feb 10 18:23:16 2014
+            Running UrbanSim2 (from drcog.models.urbansim2): started on Mon Feb 10 18:23:17 2014
+                Starting UrbanSim2 run.
+                Model estimation...
+                HLCM estimation.
+                ELCM estimation.
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+            Running UrbanSim2 (from drcog.models.urbansim2): completed...2 min, 11.6 sec
+        Simulate year 2011: completed............................2 min, 12.3 sec

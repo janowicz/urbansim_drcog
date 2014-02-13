@@ -88,8 +88,7 @@ class OpusGui(QMainWindow, Ui_MainWindow):
 
         # Variable library
         self.variable_library = None
-        import time
-        time.sleep(2)
+
         # Load the latest project file if that flag is set in GUI configuration
         if self.gui_config.load_latest_on_start:
             try:

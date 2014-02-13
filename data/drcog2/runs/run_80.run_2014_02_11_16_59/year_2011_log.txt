@@ -1,0 +1,85 @@
+        Simulate year 2011: started on Tue Feb 11 16:59:44 2014
+            Running UrbanSim2 (from drcog.models.urbansim2): started on Tue Feb 11 16:59:45 2014
+                Starting UrbanSim2 run.
+                Model estimation...
+                Model simulation...
+                Running with fixed random seed.
+                REPM estimation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                ELCM simulation.
+                Running employment transition model.
+                HLCM simulation.
+                Running household transition model.
+                Proforma simulation.
+                Household diffs
+                county_id
+                8001         -4754
+                8005         10176
+                8013          3492
+                8014          2888
+                8019          -430
+                8031         45821
+                8035          6176
+                8039          -441
+                8047           -47
+                8059        -16158
+                8123           354
+                dtype: int64
+                47077
+                Employment diffs
+                county_id
+                8001         -1115
+                8005          4348
+                8013         16783
+                8014          7670
+                8019          -252
+                8031         87225
+                8035         -1989
+                8039          -338
+                8047          1109
+                8059         24465
+                8123           -16
+                Name: employees, dtype: int32
+                137890
+                Resunit diffs
+                county_id
+                8001          9859
+                8005          2902
+                8013         10391
+                8014            51
+                8019             0
+                8031         24701
+                8035          9169
+                8039           490
+                8047           155
+                8059          1065
+                8123          3793
+                Name: residential_units, dtype: int32
+                62576
+                NR sqft diffs
+                county_id
+                8001          9984067
+                8005          8462677
+                8013         10617418
+                8014          3275939
+                8019           389221
+                8031         70293762
+                8035          2132940
+                8039                0
+                8047           278261
+                8059         21493009
+                8123           290137
+                Name: non_residential_sqft, dtype: int32
+                127217431
+            Running UrbanSim2 (from drcog.models.urbansim2): completed...4 min, 34.9 sec
+            Writing datasets to cache for year 2011: started on Tue Feb 11 17:04:20 2014....0.0 sec
+        Simulate year 2011: completed............................4 min, 36.4 sec

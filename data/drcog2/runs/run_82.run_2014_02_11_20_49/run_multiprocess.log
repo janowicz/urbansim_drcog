@@ -1,0 +1,325 @@
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 20:50:00 2014Cache Directory set to: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_82.run_2014_02_11_20_49
+Start simulation run: started on Tue Feb 11 20:50:00 2014
+    random seed = (275475843,)
+    Starting simulation for year 2011: started on Tue Feb 11 20:50:00 2014    Starting simulation for year 2011: completed................28 min, 12.3 sec
+Start simulation run: completed.................................28 min, 12.3 sec
+Running simulation for year 2011 in new process: completed......28 min, 12.6 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 83 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_83.run_2014_02_11_23_52
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Tue Feb 11 23:52:48 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_83.run_2014_02_11_23_52'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_83.run_2014_02_11_23_52\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 23:52:48 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_83.run_2014_02_11_23_52\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpkdo_oy\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed..............28.3 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmpkdo_oy\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 84 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_84.run_2014_02_11_23_56
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Tue Feb 11 23:56:28 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_84.run_2014_02_11_23_56'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_84.run_2014_02_11_23_56\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Tue Feb 11 23:56:28 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_84.run_2014_02_11_23_56\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmp_zrfcx\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed..............20.5 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmp_zrfcx\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 85 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_85.run_2014_02_12_00_00
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 00:00:41 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_85.run_2014_02_12_00_00'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.1 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_85.run_2014_02_12_00_00\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 00:00:41 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_85.run_2014_02_12_00_00\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpx6efor\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......2 min, 45.8 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmpx6efor\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 86 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_86.run_2014_02_12_00_04
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 00:04:30 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_86.run_2014_02_12_00_04'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_86.run_2014_02_12_00_04\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 00:04:30 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_86.run_2014_02_12_00_04\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpds4hip\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......2 min, 43.6 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmpds4hip\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 87 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_87.run_2014_02_12_00_12
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 00:12:25 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_87.run_2014_02_12_00_12'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_87.run_2014_02_12_00_12\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 00:12:25 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_87.run_2014_02_12_00_12\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpzlrtoi\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed........8 min, 9.7 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 88 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_88.run_2014_02_12_00_24
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 00:24:58 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_88.run_2014_02_12_00_24'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_88.run_2014_02_12_00_24\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 00:24:58 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_88.run_2014_02_12_00_24\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmp4irvpx\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed...4 hrs, 29 min, 38.4 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 89 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_89.run_2014_02_12_08_41
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 08:41:46 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_89.run_2014_02_12_08_41'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_89.run_2014_02_12_08_41\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 08:41:46 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_89.run_2014_02_12_08_41\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpz77w0r\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed..............21.4 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmpz77w0r\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 90 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_90.run_2014_02_12_08_45
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 08:45:39 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_90.run_2014_02_12_08_45'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_90.run_2014_02_12_08_45\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 08:45:39 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_90.run_2014_02_12_08_45\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpnglr9a\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed......30 min, 22.0 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 91 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_91.run_2014_02_12_10_27
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 10:27:19 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_91.run_2014_02_12_10_27'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_91.run_2014_02_12_10_27\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 10:27:19 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_91.run_2014_02_12_10_27\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmp_pf9qc\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......2 min, 50.9 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 92 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_92.run_2014_02_12_10_48
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 10:48:10 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_92.run_2014_02_12_10_48'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_92.run_2014_02_12_10_48\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 10:48:10 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_92.run_2014_02_12_10_48\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpojri9u\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed......44 min, 20.5 sec
+Done running simulation for years 2011 thru 2011
+Cache directory for run 93 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_93.run_2014_02_12_12_06
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 12:06:44 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_93.run_2014_02_12_12_06'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_93.run_2014_02_12_12_06\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 12:06:44 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_93.run_2014_02_12_12_06\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmptwoigy\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed...............0.8 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmptwoigy\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 94 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_94.run_2014_02_12_12_07
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 12:07:35 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_94.run_2014_02_12_12_07'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_94.run_2014_02_12_12_07\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 12:07:35 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_94.run_2014_02_12_12_07\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmpy74ez1\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed...............0.8 sec
+ERROR: Unexpected Error From Model
+Traceback (most recent call last):
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_gui\scenarios_manager\run\run_simulation.py", line 269, in run
+    scenario_name=self.scenariotorun)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\services\run_server\run_manager.py", line 123, in run_run
+    model_system.run_multiprocess(run_resources)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 479, in run_multiprocess
+    log_file=log_file)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 512, in _run_each_year_as_separate_process
+    resources, optional_args=optional_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py", line 585, in _fork_new_process
+    success = self.forked_processes[-1].fork_new_process(module_name, resources, **key_args)
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 74, in fork_new_process
+    self.wait()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 90, in wait
+    self.check_status()
+  File "C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\fork_process.py", line 101, in check_status
+    raise StandardError("Child python process exited with failure.\nCalling module: %s\nSystem command: %s" % (self.module_name, self.python_cmd))
+StandardError: Child python process exited with failure.
+Calling module: opus_core.model_coordinators.model_system
+System command: ['C:\\Anaconda\\python.exe', 'C:\\Users\\janowicz\\Dropbox\\repos\\urbansim_drcog\\src\\opus_core\\model_coordinators\\model_system.py', '-r', 'c:\\users\\janowicz\\appdata\\local\\temp\\tmpy74ez1\\resources.pickle', '--log-file-name', 'run_multiprocess.log']
+
+Cache directory for run 95 set to c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_95.run_2014_02_12_12_08
+Running opus_core.store.utils.cache_flt_data.CacheFltData: started on Wed Feb 12 12:08:14 2014
+    Caching files from 'C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\data/test_cache/' 
+    to 'c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_95.run_2014_02_12_12_08'.
+Running opus_core.store.utils.cache_flt_data.CacheFltData: completed.....0.0 sec
+Logging to file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_95.run_2014_02_12_12_08\run_multiprocess.log
+Running simulation for years 2011 thru 2011
+Simulation root seed: None
+Running simulation for year 2011 in new process: started on Wed Feb 12 12:08:14 2014
+    Closing log file: c:/users/janowicz/dropbox/repos/urbansim_drcog\data\drcog2/runs\run_95.run_2014_02_12_12_08\run_multiprocess.log
+    Invoking: C:\Anaconda\python.exe C:\Users\janowicz\Dropbox\repos\urbansim_drcog\src\opus_core\model_coordinators\model_system.py -r c:\users\janowicz\appdata\local\temp\tmphjwjh5\resources.pickle --log-file-name run_multiprocess.log
+Running simulation for year 2011 in new process: completed.......8 min, 48.0 sec
+Done running simulation for years 2011 thru 2011
